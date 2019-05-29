@@ -12,9 +12,6 @@ class CliffEnv(CliffWalkingEnv):
         self.goalstate = np.ravel_multi_index((3, 11), self.shape)
         self.actions = {0: "U", 1: "R", 2: "D", 3: "L"}
 
-    def sample(self, s, a):
-        return self.P[s][a][0][1]
-
     def state_to_pos(self, s):
         return divmod(s, self.shape[1])
 
