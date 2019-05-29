@@ -2,7 +2,7 @@ import numpy as np
 from gym.envs.toy_text.cliffwalking import CliffWalkingEnv
 
 
-class CliffWalkingExam2018Env(CliffWalkingEnv):
+class CliffEnv(CliffWalkingEnv):
     """
     Extension of the CliffWalking environment to make it compatible with the intreface of the lab sessions
     """
